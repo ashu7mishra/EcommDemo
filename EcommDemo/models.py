@@ -5,3 +5,9 @@ class User(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField(max_length=50)
     address = models.CharField(max_length=255, null=True)
+
+class Product(models.Model):
+    name = models.CharField(max_length=50)
+    price = models.FloatField()
+    description = models.TextField()
+    stock = models.IntegerField()
